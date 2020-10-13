@@ -13,11 +13,11 @@ namespace Tdd
         [Test]
         public void ValidarPropriedadesDeUmProtudo()
         {
-            var cliente = new Cliente();
+            var produto = new Produto();
 
-            Assert.IsNull(cliente.Id);
-            Assert.IsNull(cliente.Nome);
-            Assert.IsNull(cliente.Sobrenome);
+            Assert.IsNull(produto.Id);
+            Assert.IsNull(produto.Nome);
+            Assert.IsNull(produto.Sobrenome);
         }
     }
 }
