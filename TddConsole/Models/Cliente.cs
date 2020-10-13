@@ -11,9 +11,9 @@ namespace TddConsole.Models
 
 		public int? Id { get; set; }
 		public string Nome { get; set; }
-		public string Sobrenome { get; set; }
+		public string Sobrenome { get; set; }        
 
-		public void Salvar(Db db)
+        public void Salvar(Db db)
         {
 			db.Salvar(this);
         }
