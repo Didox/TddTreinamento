@@ -3,7 +3,7 @@ using TddConsole.Models;
 
 namespace Tdd
 {
-    public class UCliente
+    public class UProduto
     {
         [SetUp]
         public void Setup()
@@ -11,7 +11,7 @@ namespace Tdd
         }
 
         [Test]
-        public void ValidarPropriedadesDeUmCliente()
+        public void ValidarPropriedadesDeUmProtudo()
         {
             var cliente = new Cliente();
 
