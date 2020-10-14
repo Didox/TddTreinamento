@@ -5,7 +5,7 @@ using TddConsole.Models;
 /*
  Elmon - Criar um fatore para salvar e buscar objetos com o teste 
  Objeto cliente
-*/ 
+*/
 
 namespace Tdd
 {
@@ -13,14 +13,16 @@ namespace Tdd
     {
         private static UClienteFactory _instance = null;
 
-        private List<string> _nomes = new List<string>() {"Danilo", "Elmon", "Marco"};
+        private List<string> _nomes;
 
-        private List<string> _sobrenomes = new List<string>() {"Santos", "Noronha", "Tomaz"};
+        private List<string> _sobrenomes;
 
         private Random _random;
 
         UClienteFactory()
         {
+            _nomes = new List<string>() {"Danilo", "Elmon", "Marco"};
+            _sobrenomes = new List<string>() {"Santos", "Noronha", "Tomaz"};
             _random = new Random();
         }
 
