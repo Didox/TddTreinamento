@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using TddConsole.Models;
 
 namespace Tdd
 {
@@ -13,7 +14,7 @@ namespace Tdd
         }
 
         [Test]
-        public void ValidarPropriedadesDeUmClienteNaoNull()
+        public void ValidarPropriedadesDeUmClienteAtributosNaoNull()
         {
             var cliente = _mock.ClienteMockado();
 
@@ -23,13 +24,31 @@ namespace Tdd
         }
         
         [Test]
-        public void ValidarPropriedadesDeUmClienteNull()
+        public void ValidarPropriedadesDeUmClienteAtributosNull()
         {
             var cliente = _mock.ClienteMockadoNull();
 
             Assert.IsNull(cliente.Id);
             Assert.IsNull(cliente.Nome);
             Assert.IsNull(cliente.Sobrenome);
+        }
+
+        [Test]
+        public void ValidarCriacaoDeUmCliente()
+        {
+            var cliente = _mock.ClienteMockado();
+            
+            Assert.IsNotNull(cliente);
+            Assert.IsInstanceOf<Cliente>(cliente);
+        }
+        
+        [Test]
+        public void ValidarCriacaoDeUmClienteAtributosNull()
+        {
+            var cliente = _mock.ClienteMockadoNull();
+            
+            Assert.IsNotNull(cliente);
+            Assert.IsInstanceOf<Cliente>(cliente);
         }
     }
 }
