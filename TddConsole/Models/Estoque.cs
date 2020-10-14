@@ -3,15 +3,15 @@ using TddConsole.Servicos;
 
 namespace TddConsole.Models
 {
-	public class Estoque : IDoc
+	public class Estoque : IDoc 
 	{
 		public Estoque()
 		{
 		}
 
-		public IProduto produto { get; set; }
-		public int qtdatual { get; set; }
-        public int qtdminima { get; set; }
+		public IProduto Produto { get; set; }
+		public int QtdAtual { get; set; }
+        public int QtdMinima { get; set; }
 
 		public void Salvar(Db db)
         {
@@ -20,7 +20,13 @@ namespace TddConsole.Models
 
         public void ContaEstoque(Db db)
         {
-			db.Salvar(this);
+			var list = db.Todos();
+            int Qtd = 0;
+            foreach (var p in list)
+            {
+                //Aqui será implementado uma contagem do estoque desse produto
+                
+            }
         }
 	}
 }
