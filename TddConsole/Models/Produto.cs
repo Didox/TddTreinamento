@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace TddConsole.Models
 {
-    class Produto
+    public class Produto
     {
 
         public int? Id { get; set; }
