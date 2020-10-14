@@ -15,4 +15,9 @@
   <ItemGroup>
     <ProjectReference Include="..\TddConsole\TddConsole.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="UCliente (another copy).cs" />
+    <Compile Remove="UCliente (copy).cs" />
+  </ItemGroup>
 </Project>
