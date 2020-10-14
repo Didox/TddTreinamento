@@ -3,12 +3,9 @@ using TddConsole.Models;
 
 namespace Tdd
 {
-    public class UCliente
+    public class UClienteOut
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
+
 
         [Test]
         public void ValidarPropriedadesDeUmCliente()
