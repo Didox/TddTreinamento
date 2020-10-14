@@ -358,3 +358,17 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
+
+.idea/
+.idea
+
+/.idea/.idea.TddConsole/.idea/.name
+/.idea/.idea.TddConsole/.idea/codeStyles/codeStyleConfig.xml
+/.idea/.idea.TddConsole/.idea/contentModel.xml
+/.idea/.idea.TddConsole/.idea/encodings.xml
+/.idea/.idea.TddConsole/.idea/indexLayout.xml
+/.idea/.idea.TddConsole/.idea/modules.xml
+/.idea/.idea.TddConsole/.idea/projectSettingsUpdater.xml
+/.idea/.idea.TddConsole/riderModule.iml
+/.idea/.idea.TddConsole/.idea/vcs.xml
+/.idea/.idea.TddConsole/.idea/workspace.xml

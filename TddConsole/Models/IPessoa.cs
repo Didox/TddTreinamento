@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace TddConsole.Models
 {
-    public interface IProduto
+    public interface IPessoa
     {
-        int Descricao { get; set; }
+        public string Email { get; set; }
     }
 }
